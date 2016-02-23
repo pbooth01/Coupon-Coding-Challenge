@@ -1,0 +1,34 @@
+{
+  "name": "coupon-coding-challenge",
+  "version": "1.0.0",
+  "description": "REST endpoint for Shopify",
+  "main": "coupon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbooth01/Coupon-Coding-Challenge.git"
+  },
+  "keywords": [
+    "node.js",
+    "angular.js"
+  ],
+  "author": "Phillip Booth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbooth01/Coupon-Coding-Challenge/issues"
+  },
+  "homepage": "https://github.com/pbooth01/Coupon-Coding-Challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.5.0",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "shopify-node-api": "^1.6.1"
+  }
+}
