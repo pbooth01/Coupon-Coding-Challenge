@@ -34,11 +34,12 @@ var port = process.env.PORT || 8090;        // set our port
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
 
-// test route to make sure everything is working (accessed at GET http://localhost:8090/api)
+// route controls the rendering of the index page
 router.get('/', function(req, res) {
   res.render('index');
 });
 
+//route controls user authentication. Necessary params are pulled from query variables
 router.route('/account-auth')
 
   .get(function(req, res, next){
@@ -75,6 +76,7 @@ router.route('/account-auth')
       })
   });
 
+//route controls coupon generation for user. Necessary params are pulled from query variables
 router.route('/generate-coupon')
 
   .post(function(req, res, next){
